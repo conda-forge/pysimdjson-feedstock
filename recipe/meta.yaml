@@ -11,7 +11,7 @@ source:
   sha256: 820a3be337132822927e60aae7a0fba67cfb0ad02a27100765fbf85090133de0
 
 build:
-  number: 0
+  number: 1
   skip: true   # [py<36 or win]
   script: "{{ PYTHON }} -m pip install '.[dev]' --no-binary all -vv"
 
