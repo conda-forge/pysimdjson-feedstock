@@ -11,9 +11,9 @@ source:
   sha256: 2d4f87259618d4464be0c4c6c367f72d8bcf91fcc9edb4c505f55722496a92eb
 
 build:
-  number: 0
-  skip: true  # [py<36 or win]
-  script: {{ PYTHON }} -m pip install '.[dev]' --no-binary all -vv
+  number: 1
+  skip: true  # [py<36]
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -21,8 +21,8 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - pybind11
     - python
+    - cython
   run:
     - python
 
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - CJ-Wright
+    - synapticarbors
