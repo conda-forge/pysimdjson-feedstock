@@ -1,5 +1,5 @@
 {% set name = "pysimdjson" %}
-{% set version = "4.0.2" %}
+{% set version = "4.0.3" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2d4f87259618d4464be0c4c6c367f72d8bcf91fcc9edb4c505f55722496a92eb
+  sha256: 61900992d7f992b073a8c5f93cafa4af9bfd3209624baa775699b0fdd6f67517
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<36]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
