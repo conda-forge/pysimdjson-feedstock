@@ -11,6 +11,8 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: c57fa1da647b80d75a43301342a878708cac00f8d2fae79b6fcd9f036cb1f9ac
+  patches:
+    - pxd.patch
 
 build:
   number: 0
