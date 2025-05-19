@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysimdjson-feed
 
 Home: http://github.com/TkTech/pysimdjson
 
-Package license: Apache-2.0 and MIT
+Package license: Apache-2.0 AND MIT
 
 Summary: simdjson bindings for python
 

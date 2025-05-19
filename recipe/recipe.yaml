@@ -44,7 +44,7 @@ tests:
 about:
   summary: simdjson bindings for python
   license_file: LICENSE
-  license: Apache-2.0 and MIT
+  license: Apache-2.0 AND MIT
   homepage: http://github.com/TkTech/pysimdjson
 
 extra:
