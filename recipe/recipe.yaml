@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysimdjson
-  version: "7.0.2"
+  version: "8.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 44cf276e48912a3b9c7ca362c14da8420a7ac15a9f1a16ec95becff86db3904a
+  sha256: e5669f38c3d91017361d708654c5a58130a91102dd56f001bfa4dc0f923edd00
 
 build:
-  number: 2
+  number: 0
   skip: match(python, "<3.9")
   script: ${{ PYTHON }} -m pip install . -vv
 
